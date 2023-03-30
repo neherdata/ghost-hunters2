@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "ghost-hunters2",
+    "name": "Ghost Hunters v2",
     "slug": "ghost-hunters2",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -12,9 +12,7 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },

@@ -1,31 +1,38 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Image, ImageURISource } from "react-native";
 
-import EditScreenInfo from '../../components/EditScreenInfo';
-import { Text, View } from '../../components/Themed';
+import EditScreenInfo from "../../components/NDS";
+import { Text, View } from "../../components/Themed";
 
 export default function TabTwoScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Tab Two</Text>
-      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <EditScreenInfo path="app/(tabs)/two.tsx" />
+      <Image
+        source={{ uri: "https://www.github.com/neherdata.png" }}
+        style={styles.ndsLogo}
+      />
+      <Text style={styles.title}>Ghost Hunters v2</Text>
+      <View style={styles.separator} lightColor="black" darkColor="white" />
+      <EditScreenInfo path="   Big tough meat bag thinks he's tough over here. You want it? Come and get me, punk. - Casper the 'Friendly' Ghost" />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
+  ndsLogo: { width: 100, height: 100 },
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
   },
   title: {
-    fontSize: 20,
-    fontWeight: 'bold',
+    fontSize: 30,
+    fontWeight: "bold",
+    fontFamily: "SpaceMono",
   },
   separator: {
-    marginVertical: 30,
-    height: 1,
-    width: '80%',
+    marginVertical: 10,
+    marginBottom: 20,
+    height: 3,
+    width: "80%",
   },
 });
