@@ -12,7 +12,7 @@ export default function TabTwoScreen() {
       />
       <Text style={styles.title}>Ghost Hunters v2</Text>
       <View style={styles.separator} lightColor="black" darkColor="white" />
-      <EditScreenInfo path="   Big tough meat bag thinks he's tough over here. You want it? Come and get me, punk. - Casper the 'Friendly' Ghost" />
+      <EditScreenInfo path="   Big tough meatbag thinks he's hot shit over here. You want it? Come and get me, punk. - Casper the 'Friendly' Ghost" />
     </View>
   );
 }
